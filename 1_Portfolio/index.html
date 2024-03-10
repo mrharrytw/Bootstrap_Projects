@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- MDB -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" /> -->
+    <!-- Font-awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #e6e6ff;
+        }
+
+        .cutm-hover {
+            transition: all 1s ease;
+        }
+
+        .cutm-hover:hover {
+            transform: scale(1.05);
+        }
+
+        @media (min-width: 768px) {
+            section::before {
+                content: '';
+                display: block;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section Start -->
+    <!-- style="background: linear-gradient(to right, #232526, #6c6c6d);" -->
+    <section class="">
+        <nav class="navbar nav-underline navbar-expand-md shadow fixed-top"
+            style="background: linear-gradient(to right, #58151c, #56292e);">
+            <div class="container-lg">
+                <a class="navbar-brand text-light me-5" href="#home">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style="transition: all 0.5s ease-in-out;">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light me-1" href="#home"
+                                style="transition: all 0.5s ease-in-out;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light me-1" href="#aboutme"
+                                style="transition: all 0.5s ease-in-out;">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light me-1" href="#skill"
+                                style="transition: all 0.5s ease-in-out;">My Skill</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light me-1" href="#project"
+                                style="transition: all 0.5s ease-in-out;">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light me-1" href="#freelance"
+                                style="transition: all 0.5s ease-in-out;">Freelance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light me-1" href="#contact"
+                                style="transition: all 0.5s ease-in-out;">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar Section End -->
+
+    <!-- Home Section Start -->
+    <section class="align-items-center" id="home">
+        <div class="container-lg">
+            <div class="row g-lg-0 g-3 min-vh-100 align-content-center align-items-center m-0">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img class="img-fluid rounded-circle shadow-lg" src="./imgs/aaa.jpg" alt="profile-pic"
+                            width="50%">
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-first">
+                    <p class="text-muted fs-4 m-0">Hi.. I'm</p>
+                    <h1 class="fw-bold fs-1 text-danger-emphasis">Web Designer</h1>
+                    <h2 class="fs-4">Harry</h2>
+                    <p class="text-muted">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro cum sit perspiciatis dicta
+                        consectetur error soluta doloribus, ipsa modi tempore, atque est? Quas eum et cum optio
+                        laboriosam repellat voluptate dolore delectus quisquam, minus sint quis deserunt ipsa rem!
+                        Aspernatur molestias nam ipsum dolorum quis expedita animi! Amet, et consectetur.
+                    </p>
+                    <a href="#" class="btn px-5 text-light" style="background: #58151c;">My Works</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Section End -->
+
+    <div class="container-lg my-md-5">
+        <hr />
+    </div>
+
+    <!-- About me Section Start -->
+    <section class="align-items-center my-5" id="aboutme">
+        <div class="container-lg my-md-5">
+
+            <div class="row justify-content-center mb-md-5">
+                <div class="col text-center">
+                    <h2 class="text-danger-emphasis fw-bold lead fs-4">About me</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="fw-bold lead mb-3">A Freelancer</div>
+                    <p class="text-muted">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Numquam, nobis quia! Unde itaque perferendis, voluptates
+                        voluptas sit blanditiis a optio, tempore, perspiciatis
+                        totam aliquid quisquam.
+                    </p>
+                    <div class="row justify-content-center gy-3 mb-5">
+                        <div class="col-sm-4">
+                            <div class="text-uppercase fw-bold text-center">
+                                <div class="text-danger-emphasis fs-4">100+</div>
+                                <div class="text-muted text-small">projects completed</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-uppercase fw-bold text-center">
+                                <div class="text-danger-emphasis fs-4">90+</div>
+                                <div class="text-muted text-small">happy clients</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-uppercase fw-bold text-center">
+                                <div class="text-danger-emphasis fs-4">95+</div>
+                                <div class="text-muted text-small">positive reviews</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 text-center mb-3">
+                            <a href="#" class="me-3"><i
+                                    class="fa-brands fa-square-facebook text-danger-emphasis fs-2"></i></a>
+                            <a href="#" class="me-3"><i
+                                    class="fa-brands fa-square-twitter text-danger-emphasis fs-2"></i></a>
+                            <a href="#" class="me-3"><i
+                                    class="fa-brands fa-square-instagram text-danger-emphasis fs-2"></i></a>
+                            <a href="#" class="me-3"><i
+                                    class="fa-brands fa-square-github text-danger-emphasis fs-2"></i></a>
+                        </div>
+                        <div class="col-sm-6 text-center">
+                            <a href="#" class="btn btn-sm btn-dark px-3" style="background: #58151c;">Download my CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="fw-bold lead mb-3">My Skill sets</div>
+                    <div class="mb-3">
+                        <div>HTML</div>
+                        <div class="progress bg-light-subtle" role="progressbar" aria-label="5px high"
+                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+                            <div class="progress-bar" style="width: 90%; background: #58151c;"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div>CSS</div>
+                        <div class="progress bg-light-subtle" role="progressbar" aria-label="5px high"
+                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+                            <div class="progress-bar" style="width: 80%; background: #58151c;"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div>JavaScript</div>
+                        <div class="progress bg-light-subtle" role="progressbar" aria-label="5px high"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+                            <div class="progress-bar" style="width: 75%; background: #58151c;"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div>Bootstrap</div>
+                        <div class="progress bg-light-subtle" role="progressbar" aria-label="5px high"
+                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+                            <div class="progress-bar" style="width: 85%; background: #58151c;"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div>UI/UX Design</div>
+                        <div class="progress bg-light-subtle" role="progressbar" aria-label="5px high"
+                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+                            <div class="progress-bar" style="width: 80%; background: #58151c;"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div>Photoshop</div>
+                        <div class="progress bg-light-subtle" role="progressbar" aria-label="5px high"
+                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="height: 5px">
+                            <div class="progress-bar" style="width: 85%; background: #58151c;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- About me Section End -->
+
+    <div class="container-lg my-md-5">
+        <hr />
+    </div>
+
+    <!-- Skill section start -->
+    <section class="align-items-center my-5" id="skill">
+        <div class="container-lg my-md-5">
+
+            <div class="row justify-content-center my-3 mb-md-4">
+                <div class="col text-center">
+                    <h2 class="text-danger-emphasis fw-bold lead fs-4">What can I do...?</h2>
+                </div>
+            </div>
+
+
+            <div class="row gy-2">
+                <div class="col-md-4 cutm-hover">
+                    <div class="bg-light shadow p-3 rounded">
+                        <div class="text-center p-2">
+                            <i class="fa-solid fa-code fs-4 text-danger-emphasis"></i>
+                        </div>
+                        <div class="fw-bold lead mb-3 text-center">
+                            Web Development
+                        </div>
+                        <div class="lead fs-5 pb-3 px-3">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Sequi quas ex ad numquam illum possimus voluptatibus eos
+                            amet vero molestiae magni quia ducimus enim eaque dolorum
+                            tempore nisi, sed hic ea eveniet soluta alias a? Ab eaque
+                            explicabo, beatae est ducimus quo ipsum tenetur eius
+                            praesentium, quos vero consequatur fuga!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cutm-hover">
+                    <div class="bg-light shadow p-3 rounded">
+                        <div class="text-center p-2">
+                            <i class="fa-regular fa-lightbulb fs-4 text-danger-emphasis"></i>
+                        </div>
+                        <div class="fw-bold lead mb-3 text-center">
+                            Creative Design
+                        </div>
+                        <div class="lead fs-5 pb-3 px-3">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Sequi quas ex ad numquam illum possimus voluptatibus eos
+                            amet vero molestiae magni quia ducimus enim eaque dolorum
+                            tempore nisi, sed hic ea eveniet soluta alias a? Ab eaque
+                            explicabo, beatae est ducimus quo ipsum tenetur eius
+                            praesentium, quos vero consequatur fuga!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cutm-hover">
+                    <div class="bg-light shadow p-3 rounded">
+                        <div class="text-center p-2">
+                            <i class="fa-regular fa-images fs-4 text-danger-emphasis"></i>
+                        </div>
+                        <div class="fw-bold lead mb-3 text-center">
+                            Photoshop
+                        </div>
+                        <div class="lead fs-5 pb-3 px-3">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Sequi quas ex ad numquam illum possimus voluptatibus eos
+                            amet vero molestiae magni quia ducimus enim eaque dolorum
+                            tempore nisi, sed hic ea eveniet soluta alias a? Ab eaque
+                            explicabo, beatae est ducimus quo ipsum tenetur eius
+                            praesentium, quos vero consequatur fuga!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Skill section end -->
+
+    <div class="container-lg my-md-5">
+        <hr />
+    </div>
+
+    <!-- my works section start -->
+    <section class="align-items-center my-5" id="project">
+        <div class="container-lg my-md-5">
+
+            <div class="row justify-content-center my-3 mb-md-4">
+                <div class="col text-center">
+                    <h2 class="text-danger-emphasis fw-bold lead fs-4">My Latest Projects.</h2>
+                </div>
+            </div>
+
+            <div class="row gy-2 gy-lg-3">
+                <div class="col-md-4 cutm-hover">
+                    <div class="shadow-sm rounded p-3">
+                        <img src="./imgs/pj1.jpg" alt="#" class="img-thumbnail">
+                        <h5 class="text-center my-2">Construction Website</h5>
+                        <div class="text-muted">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Alias qui harum laboriosam. Eius praesentium
+                            tenetur quaerat, iure hic doloribus porro.
+                            <a href="#" class="text-danger-emphasis" style="font-size: small;">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cutm-hover">
+                    <div class="shadow-sm rounded p-3">
+                        <img src="./imgs/pj2.png" alt="#" class="img-thumbnail">
+                        <h5 class="text-center my-2">Restaurant Website</h5>
+                        <div class="text-muted">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Alias qui harum laboriosam. Eius praesentium
+                            tenetur quaerat, iure hic doloribus porro.
+                            <a href="#" class="text-danger-emphasis" style="font-size: small;">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cutm-hover">
+                    <div class="shadow-sm rounded p-3">
+                        <img src="./imgs/pj3.jpg" alt="#" class="img-thumbnail">
+                        <h5 class="text-center my-2">School Website</h5>
+                        <div class="text-muted">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Alias qui harum laboriosam. Eius praesentium
+                            tenetur quaerat, iure hic doloribus porro.
+                            <a href="#" class="text-danger-emphasis" style="font-size: small;">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cutm-hover">
+                    <div class="shadow-sm rounded p-3">
+                        <img src="./imgs/db1.png" alt="#" class="img-thumbnail">
+                        <h5 class="text-center my-2">Construction Status Dashboard</h5>
+                        <div class="text-muted">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Alias qui harum laboriosam. Eius praesentium
+                            tenetur quaerat, iure hic doloribus porro.
+                            <a href="#" class="text-danger-emphasis" style="font-size: small;">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cutm-hover">
+                    <div class="shadow-sm rounded p-3">
+                        <img src="./imgs/db2.jpg" alt="#" class="img-thumbnail">
+                        <h5 class="text-center my-2">Sale Management Dashboard</h5>
+                        <div class="text-muted">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Alias qui harum laboriosam. Eius praesentium
+                            tenetur quaerat, iure hic doloribus porro.
+                            <a href="#" class="text-danger-emphasis" style="font-size: small;">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 cutm-hover">
+                    <div class="shadow-sm rounded p-3">
+                        <img src="./imgs/db3.png" alt="#" class="img-thumbnail">
+                        <h5 class="text-center my-2">Project Controlling Dashboard</h5>
+                        <div class="text-muted">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Alias qui harum laboriosam. Eius praesentium
+                            tenetur quaerat, iure hic doloribus porro.
+                            <a href="#" class="text-danger-emphasis" style="font-size: small;">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- my works section end -->
+
+    <!-- freelance section start -->
+    <section class="my-5" id="freelance">
+        <div style="background: #58151c;"">
+            <div class=" container-lg p-3 p-sm-3 p-md-5">
+            <div class="text-center text-light fs-4 fw-bold mb-1 mb-md-3">
+                Do you have any Projects ?
+            </div>
+            <div class="text-center text-light fs-1 opacity-75 mb-3 mb-md-5">
+                I'm available for Freelance Projects.
+            </div>
+            <div class="text-center row">
+                <div class="col-sm-6 mb-3 ps-4">
+                    <a href="#" class="me-3"><i class="fa-brands fa-square-facebook text-light fs-4"></i></a>
+                    <a href="#" class="me-3"><i class="fa-brands fa-square-twitter text-light fs-4"></i></a>
+                    <a href="#" class="me-3"><i class="fa-brands fa-square-instagram text-light fs-4"></i></a>
+                    <a href="#" class="me-3"><i class="fa-brands fa-square-github text-light fs-4"></i></a>
+                </div>
+                <div class="col-sm-6">
+                    <a href="#" class="btn btn-sm px-5 btn-outline-light ">Contact me</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="container-lg">
+            <div class="mt-5 mb-4">
+                <div class="text-center">
+                    <h2 class="text-danger-emphasis fw-bold lead">My Colleagues</h2>
+                </div>
+            </div>
+            <!-- carousel start -->
+            <div id="myColleagues" class="carousel slide m-auto">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myColleagues" data-bs-slide-to="0"
+                        class="bg-danger active"></button>
+                    <button type="button" data-bs-target="#myColleagues" data-bs-slide-to="1"
+                        class="bg-danger"></button>
+                    <button type="button" data-bs-target="#myColleagues" data-bs-slide-to="2"
+                        class="bg-danger"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- card 1 start -->
+                    <div class="carousel-item active card">
+                        <div class="d-block pb-3">
+                            <div class="card-header d-flex align-items-center p-3">
+                                <img src="./imgs/pp1.jpg" alt="..." class="img-thumbnail rounded-circle w-25">
+                                <div class="ms-5">
+                                    <h3>Ivan Owens</h3>
+                                    <p>Senior Web Developer</p>
+                                    <div class="">
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Nihil aut totam animi voluptatum deleniti omnis sunt
+                                    voluptatibus cum! Quidem perferendis aliquam doloremque
+                                    fugit consectetur officia consequatur sunt? Eaque tenetur,
+                                    libero laudantium necessitatibus beatae sit vero.
+                                </p>
+                                <div class="text-center my-2">
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-facebook text-danger-emphasis fs-3"></i></a>
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-twitter text-danger-emphasis fs-3"></i></a>
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-instagram text-danger-emphasis fs-3"></i></a>
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-github text-danger-emphasis fs-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 1 end -->
+                    <!-- card 2 start -->
+                    <div class="carousel-item card">
+                        <div class="d-block pb-3">
+                            <div class="card-header d-flex align-items-center p-3">
+                                <img src="./imgs/pp2.jpg" alt="..." class="img-thumbnail rounded-circle w-25">
+                                <div class="ms-5">
+                                    <h3>Sharlene Miles</h3>
+                                    <p>Web Developer</p>
+                                    <div class="">
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Nihil aut totam animi voluptatum deleniti omnis sunt
+                                    voluptatibus cum! Quidem perferendis aliquam doloremque
+                                    fugit consectetur officia consequatur sunt?
+                                </p>
+                                <div class="text-center my-2">
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-facebook text-danger-emphasis fs-3"></i></a>
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-twitter text-danger-emphasis fs-3"></i></a>
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-instagram text-danger-emphasis fs-3"></i></a>
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-github text-danger-emphasis fs-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 end -->
+                    <!-- card 3 start -->
+                    <div class="carousel-item card">
+                        <div class="d-block pb-3">
+                            <div class="card-header d-flex align-items-center p-3">
+                                <img src="./imgs/pp3.jpeg" alt="..." class="img-thumbnail rounded-circle w-25">
+                                <div class="ms-5">
+                                    <h3>Everett Gonzalez</h3>
+                                    <p>Junior Web Developer</p>
+                                    <div class="">
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-danger-emphasis"></i>
+                                        <i class="fa-solid fa-star text-white"></i>
+                                        <i class="fa-solid fa-star text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Nihil aut totam animi voluptatum deleniti omnis sunt
+                                    voluptatibus cum! Quidem perferendis aliquam doloremque
+                                    fugit consectetur officia consequatur sunt? Eaque tenetur,
+                                    libero laudantium necessitatibus beatae sit vero.
+                                </p>
+                                <div class="text-center my-2">
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-facebook text-danger-emphasis fs-3"></i></a>
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-twitter text-danger-emphasis fs-3"></i></a>
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-instagram text-danger-emphasis fs-3"></i></a>
+                                    <a href="#" class="me-3"><i
+                                            class="fa-brands fa-square-github text-danger-emphasis fs-3"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 end -->
+                </div>
+            </div>
+            <!-- carousel end -->
+        </div>
+    </section>
+    <!-- freelance section end -->
+
+    <!-- contact me section start -->
+    <section class="align-items-center my-5" id="contact">
+        <div class="container-lg my-md-5">
+
+            <!-- title -->
+            <div class="row justify-content-center mt-3 mb-1 mb-md-4">
+                <div class="col text-center">
+                    <h2 class="text-danger-emphasis fw-bold lead fs-4"><tt>Contact Me</tt></h2>
+                </div>
+            </div>
+
+            <!-- address and message start -->
+            <div class="row gy-2 gy-lg-3">
+                <!-- left section start -->
+                <div class="col-md-5">
+                    <div class="d-flex align-items-center ps-2">
+                        <div class="me-4">
+                            <i class="fa-solid fa-phone text-danger-emphasis fs-2"></i>
+                        </div>
+                        <div class="mt-3 ">
+                            <h6 class="m-0">Phone:</h6>
+                            <p>+95-9250290409</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center ps-2">
+                        <div class="me-4">
+                            <i class="fa-solid fa-envelope text-danger-emphasis fs-2"></i>
+                        </div>
+                        <div class="mt-3 ">
+                            <h6 class="m-0">Email:</h6>
+                            <p>mrharrytw@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center ps-2">
+                        <div class="me-4">
+                            <i class="fa-solid fa-location-dot text-danger-emphasis fs-2"></i>
+                        </div>
+                        <div class="mt-3 ">
+                            <h6 class="m-0">Address:</h6>
+                            <p>No.31, Dhamah Seinder st, Tarmwe Tsp, Yangon, Myanmar</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- left section end -->
+
+                <!-- right section start -->
+                <div class="col-md-7">
+                    <div class="">
+                        <form action="" class="">
+                            <div class="row g-1 mb-2">
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Your Name...">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" placeholder="@ Your Email Address...">
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Subject...">
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-sm-12">
+                                    <textarea class="form-control" rows="10" cols="10"
+                                        placeholder="Your Messages..."></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-sm-12 text-end">
+                                    <a href="" class="btn px-4 text-light" style="background: #58151c;">Send<i
+                                            class="fa-regular fa-paper-plane ms-2 opacity-75"></i></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- right section end -->
+            </div>
+            <!-- address and message end -->
+        </div>
+    </section>
+    <!-- contact me section end -->
+
+    <!-- footer start -->
+    <footer class="align-items-center text-center" style="background: linear-gradient(to right, #58151c, #56292e);">
+        <div class="container-fluid">
+            <div class="py-2 py-md-4 text-light opacity-75 lead">
+                © 2024 | CODE LAB | All rights reserved.<br />
+                We Learn, We Share, We Code | This Laboratory is for all coders.
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+</html>
