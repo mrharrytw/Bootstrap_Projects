@@ -67,7 +67,7 @@
                     <li class="nav-item"><a href="#" class="nav-link fw-bold">Clients</a></li>
                     <li class="nav-item"><a href="#" class="nav-link fw-bold">About</a></li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="dropdown-toggle nav-link fw-bold" data-bs-toggle="dropdown">Software</a>
+                        <a href="#" class="nav-link fw-bold dropdown-toggle" data-bs-toggle="dropdown">Software</a>
                         <ul class="dropdown-menu dropdown-menu-dark rounded-0">
                             <li><a href="#" class="dropdown-item">Android App</a></li>
                             <li><a href="#" class="dropdown-item">IOS App</a></li>
@@ -94,7 +94,8 @@
                     <h2 class="fst-italic fw-light text-light">We help companies to digitalize their business.</h2>
                     <p class="text-secondary">Properly set processes. Transparent cooperation. Predictable delivery.
                     </p>
-                    <a href="#" class="btn btn-warning btn-lg rounded-0">Get In Touch</a>
+                    <a href="#loginmodal" class="btn btn-warning btn-lg rounded-0" data-bs-toggle="modal">Get In
+                        Touch</a>
                 </div>
             </div>
         </div>
@@ -575,13 +576,85 @@
             <div class="col-12 text-center">
                 <p class="text-light">&copy; Copyright <span id="autoyear"></span> - Make by PTT Co.,LTD.</p>
             </div>
+
+            <!--elfsight - Viber Widget -->
+            <div class="elfsight-app-e5678cd0-668a-4073-bd41-bc044d9c7f74" data-elfsight-app-lazy></div>
         </div>
     </footer>
     <!-- End Footer Section 7PG -->
 
+
+    <!-- Start Modal Area -->
+
+    <!-- 
+        Modal Size 
+        (i) Standard Size
+           modal-xl
+           modal-lg
+           modal-md (default)
+           modal-sm
+
+        (ii) Full Size
+            modal-fullscreen
+            modal-fullscreen-sm-down
+            modal-fullscreen-md-down
+
+
+        Modal Position
+        (i) modal-dialog-centered
+
+    -->
+    <!-- Start Get in touch Modal -->
+    <div id="loginmodal" class="modal">
+
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-md-down">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Login Here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <form action="">
+                            <div class="form-group mb-4">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="eamil"
+                                    class="form-control form-control-sm rounded-0" placeholder="Enter your email..." />
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password"
+                                    class="form-control form-control-sm rounded-0" placeholder="********" />
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button type="reset" class="btn btn-secondary btn-sm rounded-0"
+                                    data-bs-dismiss="modal">Cancle</button>
+                                <button type="submit" class="btn btn-primary btn-sm ms-3 rounded-0">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <p>Not Yet Register! <a href="#" class="text-decoration-none">SignUp Here</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End Get in touch Modal 11PT -->
+
+    <!-- End Modal Area -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
+    <!--elfsight - Viber Widget -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
