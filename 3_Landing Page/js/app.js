@@ -1,10 +1,26 @@
 $(document).ready(function () {
+    //Start Back to top
+    $(".btn-backtotops").hide();
+    $(window).scroll(function () {
+
+        let getscrolltop = $(this).scrollTop();
+        // console.log(getscrolltop);
+
+        if (getscrolltop >= 370) {
+            $('.btn-backtotops').fadeIn(1500);
+        } else {
+            $('.btn-backtotops').fadeOut(1500);
+        }
+    });
+
+    //End Back to top
+    //-----------------------------------------------------------------------
 
     // Start Nav Bar
     $(window).scroll(function () {
 
         let getscrolltop = $(this).scrollTop();
-        console.log(getscrolltop);
+        // console.log(getscrolltop);
 
         if (getscrolltop >= 200) {
             $('.navbar').addClass('navmenus');
@@ -58,4 +74,13 @@ $(document).ready(function () {
     });
     // End Adv Section
     //-----------------------------------------------------------------------
+
+
+    // Start Footer
+    const getyear = document.getElementById("getyear");
+    const getfullyear = new Date().getFullYear();
+    getyear.textContent = getfullyear;
+    // End Footer
+
+
 });

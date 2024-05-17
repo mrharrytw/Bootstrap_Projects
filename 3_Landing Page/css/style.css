@@ -8,7 +8,10 @@
 
 * {
     box-sizing: border-box;
+
 }
+
+
 
 body {
     margin: 0;
@@ -18,7 +21,93 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+
+    scroll-behavior: smooth;
 }
+
+/* Start Back to Top */
+.btn-backtotops {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 200;
+}
+
+/* End Back to Top */
+
+
+/* Start Stick Note */
+.sticknotes a {
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+
+    position: absolute;
+    left: -80px;
+
+    padding: 15px;
+    z-index: 100;
+
+    border-radius: 0 15px 0 0;
+    transition: left 0.3s;
+}
+
+.sticknotes a:hover {
+    left: 0;
+}
+
+.sticknotes .about {
+    top: 200px;
+    background-color: green;
+}
+
+.sticknotes .blog {
+    top: 260px;
+    background-color: var(--primary-color);
+}
+
+.sticknotes .news {
+    top: 320px;
+    background-color: var(--fruit-color);
+}
+
+.sticknotes .contact {
+    top: 380px;
+    background-color: var(--secondary-color);
+}
+
+@media (max-width:768px) {
+    .sticknotes a {
+        font-size: 16px;
+        color: #fff;
+        padding: 8px;
+    }
+
+    .sticknotes .about {
+        top: 200px;
+    }
+
+    .sticknotes .blog {
+        top: 240px;
+    }
+
+    .sticknotes .news {
+        top: 280px;
+    }
+
+    .sticknotes .contact {
+        top: 320px;
+    }
+}
+
+/* End Stick Note */
+
+
 
 /* Start Header Section */
 header {
@@ -423,12 +512,63 @@ ul.clientlists img {
     background-attachment: fixed;
 }
 
-/* Start Contact Section */
+.contacts .inputs {
+    background-color: transparent;
+    color: #fff;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    transition: all 0.8s;
+}
+
+.contacts .inputs:focus {
+    box-shadow: none;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.inputs::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.labels {
+    color: red;
+    display: block;
+    margin-left: 15px;
+    margin-top: -60px;
+}
+
+.inputs:placeholder-shown+.labels {
+    opacity: 0;
+}
+
+.submit-btns {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.submit-btns:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 /* End Contact Section */
 
 /* Start Footer Section */
 .footerlinks {
+    color: #f4f4f4;
     text-decoration: none;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+.footerlinks:hover {
+    color: orange;
+    border-bottom: 1px solid orange;
+    letter-spacing: 1px;
+
 }
 
 /* End Footer Section */
