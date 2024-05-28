@@ -77,4 +77,86 @@ ul li {
 
 /* end left sidebar */
 
+/* start notify and user account */
+.dropdowns {
+    position: relative;
+}
+
+.dropdowns .dropdown-contents {
+    min-width: 230px;
+    background-color: #f6f6f6;
+
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 10;
+
+    display: none;
+}
+
+.dropdowns .dropdown-contents a {
+    color: #000;
+    display: block;
+
+    padding: 10px;
+}
+
+.dropdowns .dropdown-contents a:hover {
+    background-color: #ddd;
+}
+
+.dropdowns .dropdown-contents.show {
+    display: block;
+}
+
+.navbar .close-btns {
+    width: 25;
+    height: 25;
+    background-color: transparent;
+    line-height: 22px;
+    border-radius: 50%;
+    outline: none;
+
+    margin-right: 3px;
+
+    display: none;
+}
+
+@media(max-width:768px) {
+    .navbar .close-btns {
+        display: block;
+    }
+}
+
+/* end notify and user account */
+
 /* End Navbar */
+
+/* Start Content Area */
+
+/* start shortcut area */
+.border-left-primarys {
+    border-left-width: 3px;
+    border-left-color: steelblue;
+}
+
+.border-left-successes {
+    border-left-width: 3px;
+    border-left-color: green;
+}
+
+.border-left-infos {
+    border-left-width: 3px;
+    border-left-color: skyblue;
+}
+
+.border-left-warnings {
+    border-left-width: 3px;
+    border-left-color: orange;
+}
+
+/* end shortcut area */
+
+/* End Content Area */
